@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nerko+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+            <ul>
+                <li><a href="item.html">Item</a></li><br>
+                <li><a href="category.html">Category</a></li><br>
+                <li><a href="employee.html">Employee</a></li><br>
+            </ul>
+        </div>
+
+        <div class="right">
+            <form>
+                <label id="date">Date</label>
+                <br><br><br><br>
+                <label>Item</label> <br><br>
+                <label>Name:</label> <br><br>
+                <input type="text" id="item">
+                <p id="itemvalidate"></p>
+
+                <button type="submit" onclick="return validate()" id="btn">Save</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="javascript/main.js"></script>
+
+</html>

@@ -1,0 +1,92 @@
+@import './mixin';
+@import './variables';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-white;
+    font-family: 'Nerko One', cursive;
+    //    font-family: 'Dancing Script', cursive !important;
+
+
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    height: 400px;
+    width: 400 + 400px;
+    margin: 195 + 1px auto;
+
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        color: $link-text;
+        text-decoration: none;
+    }
+
+}
+
+.left {
+    @include display();
+    padding-left: 40px;
+    width: 30%;
+    background-color: $pure-white;
+    border: 2px solid $border-color;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+
+.right {
+
+    @include display();
+    align-items: flex-start !important;
+    padding-left: 40px;
+    padding-top: 40px;
+    width: 70%;
+    background-color: $pure-white;
+    border: 2px solid $border-color;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    #btn {
+
+        background-color: $btn-color;
+        border: 1px solid $btn-color;
+        padding: 5px 12px;
+        color: $pure-white;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: 0.15s;
+        font-family: 'Nerko One', cursive;
+        // font-family: 'Dancing Script', cursive;
+        font-size: large;
+
+        &:hover {
+            //nesting
+            opacity: 0.8;
+        }
+    }
+
+    input {
+        width: 100%;
+        background-color: #fafafa;
+        margin-bottom: 5px;
+        padding: 8px 12px;
+        border: 1px solid #dbdbdb;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    p {
+        color: red;
+
+    }
+
+}
